@@ -3,12 +3,9 @@ import * as React from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import ParticleNetwork from './ParticleNetwork';
-import SplineScene from './SplineScene';
+import { SplineSceneBasic } from './SplineSceneBasic';
 
 export default function HomePage() {
-  // Using a known working public Spline scene
-  const robotScene = 'https://prod.spline.design/kZDDjO5HuC9GJ92h/scene.splinecode';
-
   return (
     <div className="relative min-h-screen bg-[#0D1117] text-gray-200 font-sans selection:bg-[#00FFC2] selection:text-black">
       <ParticleNetwork />
@@ -58,10 +55,7 @@ export default function HomePage() {
 
             {/* Right Side: Spline Scene */}
             <div className="relative h-[500px] lg:h-[700px] w-full order-1 lg:order-2 animate-fade-in">
-              <SplineScene 
-                scene={robotScene} 
-                className="h-full w-full shadow-2xl shadow-black/50 rounded-2xl border border-white/5" 
-              />
+              <SplineSceneBasic />
             </div>
           </div>
         </main>

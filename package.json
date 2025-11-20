@@ -16,6 +16,10 @@
     "recharts": "^2.12.7",
     "@calcom/embed-react": "^1.4.0",
     "@splinetool/react-spline": "latest",
+    "@splinetool/runtime": "latest",
+    "clsx": "latest",
+    "tailwind-merge": "latest",
+    "framer-motion": "latest",
     "firebase": "^12.6.0"
   },
   "devDependencies": {
