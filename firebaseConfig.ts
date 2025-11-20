@@ -1,10 +1,8 @@
 
-import * as firebaseApp from 'firebase/compat/app';
+import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 import 'firebase/compat/storage';
-
-const firebase = (firebaseApp as any).default || firebaseApp;
 
 const firebaseConfig = {
   apiKey: "AIzaSyAfAmediQHvqtb42H_wvqc2iFTVtJnlnR4",
