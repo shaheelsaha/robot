@@ -116,7 +116,7 @@ const HomePage: React.FC<HomePageProps> = () => {
                             <div className="relative h-[500px] w-full hidden lg:block animate-fade-in z-10">
                                 <div className="absolute inset-0 bg-gradient-to-tr from-[#00FFC2]/10 to-purple-500/10 rounded-full blur-3xl -z-10"></div>
                                 <SplineScene 
-                                    scene="https://prod.spline.design/kZDDjO5HuC9GJJni/scene.splinecode"
+                                    scene="https://prod.spline.design/6PpQ5qTtY48wEHUd/scene.splinecode"
                                     className="w-full h-full bg-transparent"
                                 />
                             </div>
