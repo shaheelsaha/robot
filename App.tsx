@@ -156,7 +156,7 @@ const App: React.FC = () => {
     
     if (loading) {
         return (
-            <div className="flex justify-center items-center min-h-screen bg-[#0D1117]">
+            <div className="flex justify-center items-center min-h-screen">
                 <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-[#00FFC2]"></div>
             </div>
         );
