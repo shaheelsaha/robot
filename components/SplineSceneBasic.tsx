@@ -2,7 +2,6 @@
 'use client'
 
 import * as React from 'react';
-import { Spotlight } from './ui/spotlight';
 
 export function SplineSceneBasic() {
   return (
@@ -11,17 +10,10 @@ export function SplineSceneBasic() {
         width: '100%',
         height: '100%',
         position: 'relative',
-        overflow: 'hidden',
         backgroundColor: 'black',
+        overflow: 'hidden',
       }}
-      className="rounded-xl"
     >
-      {/* Interactive Spotlight */}
-      <Spotlight
-        className="-top-40 left-0 md:left-60 md:-top-20 z-10 from-white/20 via-white/10 to-transparent"
-        size={400}
-      />
-
       {/* Robot Layer - Positioned on top with transparency blend */}
       {/* Iframe height is increased to push the bottom-right watermark outside the overflow:hidden container */}
       <iframe 
@@ -32,7 +24,7 @@ export function SplineSceneBasic() {
             position: 'absolute',
             top: 0,
             left: 0,
-            zIndex: 20,
+            zIndex: 10,
             mixBlendMode: 'screen',
             filter: 'brightness(1) contrast(1.1)',
             pointerEvents: 'auto', // Keep 3D interaction enabled
