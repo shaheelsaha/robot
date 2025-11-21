@@ -54,7 +54,7 @@ export default function HomePage() {
             </div>
 
             {/* Right Side: Spline Scene */}
-            <div className="relative h-[500px] lg:h-[700px] w-full order-1 lg:order-2 animate-fade-in">
+            <div className="relative h-[500px] lg:h-[700px] w-full order-1 lg:order-2 animate-fade-in overflow-hidden">
               <SplineSceneBasic />
             </div>
           </div>
