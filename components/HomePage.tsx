@@ -1,9 +1,11 @@
 
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import ParticleNetwork from './ParticleNetwork';
 import { SplineSceneBasic } from './SplineSceneBasic';
+import { InstagramIcon, FacebookIcon, LinkedInIcon, TikTokIcon, YouTubeIcon, PinterestIcon } from './icons';
 
 export default function HomePage() {
   return (
@@ -15,41 +17,39 @@ export default function HomePage() {
         <main className="flex-grow container mx-auto px-6 py-12 flex items-center">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center w-full">
             {/* Left Side: Content */}
-            <div className="space-y-8 order-2 lg:order-1">
-              <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-white leading-tight">
-                Meet Your <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00FFC2] to-sky-400">
-                  Home Robot
+            <div className="space-y-8 order-2 lg:order-1 text-center lg:text-left">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.1]">
+                Spend your time <span className="text-[#00FFC2]">closing deals</span>, not chasing unqualified leads.
+                <br className="hidden lg:block" />
+                <span className="block mt-3">
+                  Let our AI do the <span className="text-[#00FFC2]">filtering for you</span>.
                 </span>
               </h1>
 
-              <p className="text-gray-400 text-lg md:text-xl max-w-lg leading-relaxed">
-                A friendly assistant that helps around the house — check schedules, 
-                control devices, and guide guests. Interact with it directly from 
-                this homepage using a beautiful 3D model.
+              <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                SAHA AI automatically qualifies leads, handles replies and follow-ups, and updates your CRM without any manual work.
               </p>
 
-              <ul className="space-y-4 text-gray-300">
-                {[
-                  'Interactive Spline 3D robot',
-                  'Lazy-loaded for performance',
-                  'Spotlight background effect',
-                  'Fully responsive'
-                ].map((item) => (
-                  <li key={item} className="flex items-center">
-                    <span className="flex-shrink-0 w-2 h-2 bg-[#00FFC2] rounded-full mr-4" />
-                    <span className="text-base">{item}</span>
-                  </li>
-                ))}
-              </ul>
-
-              <div className="flex flex-wrap gap-4 pt-6">
-                <button className="px-8 py-4 bg-[#00FFC2] hover:bg-teal-300 text-black font-bold rounded-lg transition-transform hover:scale-105 duration-200 shadow-[0_0_20px_theme(colors.teal.400/40%)]">
-                  Talk to robot
-                </button>
+              <div className="flex flex-wrap gap-4 pt-4 justify-center lg:justify-start">
+                <Link to="/register" className="px-8 py-4 bg-[#00FFC2] hover:bg-teal-300 text-black font-bold rounded-lg transition-transform hover:scale-105 duration-200 shadow-[0_0_20px_theme(colors.teal.400/40%)]">
+                  Get Started for Free
+                </Link>
                 <button className="px-8 py-4 border border-white/20 hover:bg-white/10 text-white font-medium rounded-lg transition-colors duration-200">
-                  Learn more
+                  View Demo
                 </button>
+              </div>
+
+              {/* Social Proof */}
+              <div className="pt-10">
+                 <p className="text-xs font-semibold text-gray-500 uppercase tracking-widest mb-6">Used by professionals at:</p>
+                 <div className="flex flex-wrap gap-8 items-center justify-center lg:justify-start opacity-50 hover:opacity-80 transition-opacity duration-300">
+                    <InstagramIcon className="w-6 h-6 text-gray-300" />
+                    <FacebookIcon className="w-6 h-6 text-gray-300" />
+                    <LinkedInIcon className="w-6 h-6 text-gray-300" />
+                    <TikTokIcon className="w-6 h-6 text-gray-300" />
+                    <YouTubeIcon className="w-6 h-6 text-gray-300" />
+                    <PinterestIcon className="w-6 h-6 text-gray-300" />
+                 </div>
               </div>
             </div>
 
