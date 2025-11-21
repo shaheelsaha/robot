@@ -1,3 +1,4 @@
+
 'use client'
 
 import * as React from 'react';
@@ -28,7 +29,7 @@ export function SplineSceneBasic() {
         {/* Right content */}
         <div className="flex-1 relative min-h-[300px] md:min-h-auto">
           <SplineScene 
-            scene="https://prod.spline.design/kZDDjO5HuC9GJ92h/scene.splinecode"
+            scene="https://prod.spline.design/GRbyeuOUZzjPKxtJLM1PK7Dt/scene.splinecode"
             className="w-full h-full"
           />
         </div>
