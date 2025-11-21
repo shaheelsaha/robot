@@ -10,9 +10,9 @@ export function SplineSceneBasic() {
         width: '100%',
         height: '100%',
         position: 'relative',
-        backgroundColor: 'black',
         overflow: 'hidden',
       }}
+      className="rounded-xl"
     >
       {/* Robot Layer - Positioned on top with transparency blend */}
       {/* Iframe height is increased to push the bottom-right watermark outside the overflow:hidden container */}
